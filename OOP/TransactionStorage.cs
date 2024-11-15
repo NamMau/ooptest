@@ -41,8 +41,8 @@ namespace OOP
             {
                 connection.Open();
 
-                string query = "INSERT INTO Order_tb (CustomerID, TotalAmount, OrderStatus, PaymentStatus, PaymentMethodID, OverDueDate) " +
-                               "VALUES (@CustomerID, @TotalAmount, @OrderStatus, @PaymentStatus, @PaymentMethodID, @OverDueDate)";
+                string query = "INSERT INTO Order_tb (CustomerID, TotalAmount, OrderStatus, PaymentStatus, PaymentMethodID, ShippingStatusID, OverDueDate) " +
+                               "VALUES (@CustomerID, @TotalAmount, @OrderStatus, @PaymentStatus, @PaymentMethodID, @ShippingStatusID, @OverDueDate)";
 
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@CustomerID", order.CustomerID);
@@ -50,6 +50,7 @@ namespace OOP
                 command.Parameters.AddWithValue("@OrderStatus", order.OrderStatus);
                 command.Parameters.AddWithValue("@PaymentStatus", order.PaymentStatus);
                 command.Parameters.AddWithValue("@PaymentMethodID", order.PaymentMethodID);
+                command.Parameters.AddWithValue("@ShippingStatusID", order.ShippingStatusID);
                 command.Parameters.AddWithValue("@OverDueDate", order.OverDueDate);
                 command.ExecuteNonQuery();
 
