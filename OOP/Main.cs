@@ -47,6 +47,18 @@ namespace OOP
                 new CartProduct { ProductID = 2, Quantity = 1 }
             }
             };
+            // Create instances of different transaction types
+            Transaction credit = new CreditTransaction { ID = 1, TotalAmount = 100.0, CreatedAt = DateTime.Now };
+            Transaction debit = new DebitTransaction { ID = 2, TotalAmount = 50.0, CreatedAt = DateTime.Now };
+
+            // Using polymorphism to process different types of transactions
+            ProcessTransaction(credit);
+            ProcessTransaction(debit);
+
+            public static void ProcessTransaction(Transaction transaction)
+            {
+            transaction.ProcessTransaction(); // Calls the overridden method in the specific subclass
+            }
 
             storage.SaveTransaction(cart);
         } 

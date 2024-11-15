@@ -12,4 +12,6 @@ namespace OOP
         public DateTime CreatedAt { get; set; }
         public double TotalAmount { get; set; }
     }
+
+    public abstract void ProcessTransaction();
 }
