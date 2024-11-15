@@ -9,21 +9,25 @@ namespace OOP
 {
     public class TransactionStorage : ITransactionStorage
     {
-        private string _connectionString = "Data Source= WINDOWS\SQLEXPRESS; Initial Catalog = shopping; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
+        private const string V = @"Data Source= WINDOWS\SQLEXPRESS; Initial Catalog = shopping; Integrated Security = True; Encrypt = False;TrustServerCertificate=True";
+
+        private string _connectionString = V;
+
 
         public void SaveTransaction(Transaction transaction)
         {
             if (transaction is Order order)
             {
-                // Simulate saving the Order to the database
                 SaveOrder(order);
                 Console.WriteLine("Saving Order to the database.");
+
             }
             else if (transaction is ShoppingCart cart)
             {
                 // Simulate saving the ShoppingCart to the database
                 SaveShoppingCart(cart);
                 Console.WriteLine("Saving ShoppingCart to the database.");
+
             }
             else
             {
@@ -33,32 +37,32 @@ namespace OOP
 
         private void SaveOrder(Order order)
         {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            using (SqlConnection connection = new SqlConnection(V))
             {
-                string query = "INSERT INTO Orders (OrderID, CustomerID, TotalAmount, OrderStatus, PaymentStatus, PaymentMethodID, OverDueDate, CreatedAt, DeliveryStatus, ShippingProviderID) " +
-                               "VALUES (@OrderID, @CustomerID, @TotalAmount, @OrderStatus, @PaymentStatus, @PaymentMethodID, @OverDueDate, @CreatedAt, @DeliveryStatus, @ShippingProviderID)";
+                connection.Open();
+
+                string query = "INSERT INTO Order_tb (CustomerID, TotalAmount, OrderStatus, PaymentStatus, PaymentMethodID, OverDueDate) " +
+                               "VALUES (@CustomerID, @TotalAmount, @OrderStatus, @PaymentStatus, @PaymentMethodID, @OverDueDate)";
 
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@OrderID", order.ID);
                 command.Parameters.AddWithValue("@CustomerID", order.CustomerID);
                 command.Parameters.AddWithValue("@TotalAmount", order.TotalAmount);
                 command.Parameters.AddWithValue("@OrderStatus", order.OrderStatus);
                 command.Parameters.AddWithValue("@PaymentStatus", order.PaymentStatus);
                 command.Parameters.AddWithValue("@PaymentMethodID", order.PaymentMethodID);
                 command.Parameters.AddWithValue("@OverDueDate", order.OverDueDate);
-                command.Parameters.AddWithValue("@CreatedAt", order.CreatedAt);
-                command.Parameters.AddWithValue("@DeliveryStatus", order.DeliveryStatus);
-                command.Parameters.AddWithValue("@ShippingProviderID", order.ShippingProviderID);
-
-                connection.Open();
                 command.ExecuteNonQuery();
+
                 Console.WriteLine("Order saved successfully.");
             }
         }
 
+
+
+
         private void SaveShoppingCart(ShoppingCart cart)
         {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            using (SqlConnection connection = new SqlConnection(V))
             {
                 string query = "INSERT INTO Carts (CartID, CustomerID, TotalAmount, CreatedAt) " +
                                "VALUES (@CartID, @CustomerID, @TotalAmount, @CreatedAt)";
