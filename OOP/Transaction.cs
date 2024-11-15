@@ -11,7 +11,8 @@ namespace OOP
         public int ID { get; set; }
         public DateTime CreatedAt { get; set; }
         public double TotalAmount { get; set; }
+    
+    // interface method
+    public abstract void ProcessTransaction(SqlConnection connection);
     }
-
-    public abstract void ProcessTransaction();
 }
