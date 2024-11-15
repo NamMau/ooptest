@@ -16,14 +16,14 @@ namespace OOP
             if (transaction is Order order)
             {
                 // Simulate saving the Order to the database
+                SaveOrder(order);
                 Console.WriteLine("Saving Order to the database.");
-                // Add actual database saving logic here
             }
             else if (transaction is ShoppingCart cart)
             {
                 // Simulate saving the ShoppingCart to the database
+                SaveShoppingCart(cart);
                 Console.WriteLine("Saving ShoppingCart to the database.");
-                // Add actual database saving logic here
             }
             else
             {
