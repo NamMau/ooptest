@@ -4,6 +4,7 @@ using OfficeDevPnP.Core.Diagnostics.Tree;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel.Channels;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,14 +20,16 @@ namespace OOP
             // Create an order and save it
             Order newOrder = new Order
             {
-                ID = 3,
-                CustomerID = 3,
-                TotalAmount = 12.99,
-                OrderStatus = "Delivered",
-                PaymentStatus = "Completed",
+                ID = 2,
+                CustomerID = 2,
+                TotalAmount = 50,
+                OrderStatus = "Completed",
+                PaymentStatus = "Unpaid",
                 PaymentMethodID = 2,
-                ShippingStatusID = 3,
                 OverDueDate = DateTime.Now.AddDays(7),
+                PaidAt = DateTime.Now,
+                delivery_status = "Shipped",
+                ShippingProviderID = 2,
             };
 
             storage.SaveTransaction(newOrder);
