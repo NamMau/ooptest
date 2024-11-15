@@ -19,14 +19,14 @@ namespace OOP
             // Create an order and save it
             Order newOrder = new Order
             {
-                ID = 1,
-                CustomerID = 123,
-                TotalAmount = 250.50,
-                OrderStatus = "Pending",
-                PaymentStatus = "Unpaid",
+                ID = 3,
+                CustomerID = 3,
+                TotalAmount = 12.99,
+                OrderStatus = "Delivered",
+                PaymentStatus = "Completed",
                 PaymentMethodID = 2,
+                ShippingStatusID = 3,
                 OverDueDate = DateTime.Now.AddDays(7),
-                CreatedAt = DateTime.Now
             };
 
             storage.SaveTransaction(newOrder);
