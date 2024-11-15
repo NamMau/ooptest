@@ -1,0 +1,2 @@
+D:\1651\code\Shoppy\OOP\obj\Debug\OOP.csproj.AssemblyReference.cache
+D:\1651\code\Shoppy\OOP\obj\Debug\OOP.csproj.CoreCompileInputs.cache

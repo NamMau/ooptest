@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\1651\\code\\Shoppy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5F165F0A-BABF-4311-92F2-AA07CA7109D7}|OOP\\OOP.csproj|D:\\1651\\code\\Shoppy\\oop\\cartproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F165F0A-BABF-4311-92F2-AA07CA7109D7}|OOP\\OOP.csproj|solutionrelative:oop\\cartproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F165F0A-BABF-4311-92F2-AA07CA7109D7}|OOP\\OOP.csproj|D:\\1651\\code\\Shoppy\\oop\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F165F0A-BABF-4311-92F2-AA07CA7109D7}|OOP\\OOP.csproj|solutionrelative:oop\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F165F0A-BABF-4311-92F2-AA07CA7109D7}|OOP\\OOP.csproj|D:\\1651\\code\\Shoppy\\oop\\itransactionstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F165F0A-BABF-4311-92F2-AA07CA7109D7}|OOP\\OOP.csproj|solutionrelative:oop\\itransactionstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F165F0A-BABF-4311-92F2-AA07CA7109D7}|OOP\\OOP.csproj|D:\\1651\\code\\Shoppy\\oop\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F165F0A-BABF-4311-92F2-AA07CA7109D7}|OOP\\OOP.csproj|solutionrelative:oop\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F165F0A-BABF-4311-92F2-AA07CA7109D7}|OOP\\OOP.csproj|D:\\1651\\code\\Shoppy\\oop\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F165F0A-BABF-4311-92F2-AA07CA7109D7}|OOP\\OOP.csproj|solutionrelative:oop\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F165F0A-BABF-4311-92F2-AA07CA7109D7}|OOP\\OOP.csproj|D:\\1651\\code\\Shoppy\\oop\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F165F0A-BABF-4311-92F2-AA07CA7109D7}|OOP\\OOP.csproj|solutionrelative:oop\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F165F0A-BABF-4311-92F2-AA07CA7109D7}|OOP\\OOP.csproj|D:\\1651\\code\\Shoppy\\oop\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F165F0A-BABF-4311-92F2-AA07CA7109D7}|OOP\\OOP.csproj|solutionrelative:oop\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F165F0A-BABF-4311-92F2-AA07CA7109D7}|OOP\\OOP.csproj|d:\\1651\\code\\shoppy\\oop\\transactionstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F165F0A-BABF-4311-92F2-AA07CA7109D7}|OOP\\OOP.csproj|solutionrelative:oop\\transactionstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\1651\\code\\Shoppy\\OOP\\Product.cs",
+              "RelativeDocumentMoniker": "OOP\\Product.cs",
+              "ToolTip": "D:\\1651\\code\\Shoppy\\OOP\\Product.cs",
+              "RelativeToolTip": "OOP\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T04:57:13.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TransactionStorage.cs",
+              "DocumentMoniker": "D:\\1651\\code\\Shoppy\\OOP\\TransactionStorage.cs",
+              "RelativeDocumentMoniker": "OOP\\TransactionStorage.cs",
+              "ToolTip": "D:\\1651\\code\\Shoppy\\OOP\\TransactionStorage.cs",
+              "RelativeToolTip": "OOP\\TransactionStorage.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T04:55:51.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ITransactionStorage.cs",
+              "DocumentMoniker": "D:\\1651\\code\\Shoppy\\OOP\\ITransactionStorage.cs",
+              "RelativeDocumentMoniker": "OOP\\ITransactionStorage.cs",
+              "ToolTip": "D:\\1651\\code\\Shoppy\\OOP\\ITransactionStorage.cs",
+              "RelativeToolTip": "OOP\\ITransactionStorage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T04:54:30.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CartProduct.cs",
+              "DocumentMoniker": "D:\\1651\\code\\Shoppy\\OOP\\CartProduct.cs",
+              "RelativeDocumentMoniker": "OOP\\CartProduct.cs",
+              "ToolTip": "D:\\1651\\code\\Shoppy\\OOP\\CartProduct.cs",
+              "RelativeToolTip": "OOP\\CartProduct.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAADwvw0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T04:53:43.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShoppingCart.cs",
+              "DocumentMoniker": "D:\\1651\\code\\Shoppy\\OOP\\ShoppingCart.cs",
+              "RelativeDocumentMoniker": "OOP\\ShoppingCart.cs",
+              "ToolTip": "D:\\1651\\code\\Shoppy\\OOP\\ShoppingCart.cs",
+              "RelativeToolTip": "OOP\\ShoppingCart.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T04:52:45.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\1651\\code\\Shoppy\\OOP\\Order.cs",
+              "RelativeDocumentMoniker": "OOP\\Order.cs",
+              "ToolTip": "D:\\1651\\code\\Shoppy\\OOP\\Order.cs",
+              "RelativeToolTip": "OOP\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T04:52:28.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "D:\\1651\\code\\Shoppy\\OOP\\Transaction.cs",
+              "RelativeDocumentMoniker": "OOP\\Transaction.cs",
+              "ToolTip": "D:\\1651\\code\\Shoppy\\OOP\\Transaction.cs",
+              "RelativeToolTip": "OOP\\Transaction.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T04:52:08.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Main.cs",
+              "DocumentMoniker": "D:\\1651\\code\\Shoppy\\OOP\\Main.cs",
+              "RelativeDocumentMoniker": "OOP\\Main.cs",
+              "ToolTip": "D:\\1651\\code\\Shoppy\\OOP\\Main.cs",
+              "RelativeToolTip": "OOP\\Main.cs",
+              "ViewState": "AQIAAAMAAACAzczMzMwXwA8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T04:51:12.187Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
