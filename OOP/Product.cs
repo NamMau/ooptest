@@ -17,8 +17,4 @@ namespace OOP
         public DateTime CreatedAt { get; set; }
         public int ShopID { get; set; }
     }
-
-
-
-
 }

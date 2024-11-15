@@ -9,7 +9,7 @@ namespace OOP
 {
     public class TransactionStorage : ITransactionStorage
     {
-        private const string V = @"Data Source= WINDOWS\SQLEXPRESS; Initial Catalog = shopping; Integrated Security = True; Encrypt = False;TrustServerCertificate=True";
+        private const string V = @"Data Source= WINDOWS\SQLEXPRESS; Initial Catalog = shoptest; Integrated Security = True; Encrypt = False;TrustServerCertificate=True";
 
         private string _connectionString = V;
 
@@ -41,17 +41,19 @@ namespace OOP
             {
                 connection.Open();
 
-                string query = "INSERT INTO Order_tb (CustomerID, TotalAmount, OrderStatus, PaymentStatus, PaymentMethodID, ShippingStatusID, OverDueDate) " +
-                               "VALUES (@CustomerID, @TotalAmount, @OrderStatus, @PaymentStatus, @PaymentMethodID, @ShippingStatusID, @OverDueDate)";
+                string query = "INSERT INTO Order (CustomerID, TotalAmount, OrderStatus, PaymentStatus, PaymentMethodID, OverDueDate, Paid_at, delivery_status, ShippingProviderID ) " +
+                               "VALUES (@CustomerID, @TotalAmount, @OrderStatus, @PaymentStatus, @PaymentMethodID, @OverDueDate, @Paid_at, @delivery_status, @ShippingProviderID)";
 
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@CustomerID", order.CustomerID);
                 command.Parameters.AddWithValue("@TotalAmount", order.TotalAmount);
                 command.Parameters.AddWithValue("@OrderStatus", order.OrderStatus);
                 command.Parameters.AddWithValue("@PaymentStatus", order.PaymentStatus);
-                command.Parameters.AddWithValue("@PaymentMethodID", order.PaymentMethodID);
-                command.Parameters.AddWithValue("@ShippingStatusID", order.ShippingStatusID);
+                command.Parameters.AddWithValue("@PaymentMethod", order.PaymentMethodID);
                 command.Parameters.AddWithValue("@OverDueDate", order.OverDueDate);
+                command.Parameters.AddWithValue("@Paid_at", order.Paid_at);
+                command.Parameters.AddWithValue("@Paid_at", order.DeliveryStatus);
+                command.Parameters.AddWithValue("@ShippingProviderID", order.ShippingProviderID);
                 command.ExecuteNonQuery();
 
                 Console.WriteLine("Order saved successfully.");
@@ -94,5 +96,5 @@ namespace OOP
                 Console.WriteLine("Shopping cart saved successfully.");
             }
         }
-    }
+    }   
 }
