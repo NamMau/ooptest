@@ -1,10 +1,6 @@
-﻿using AngleSharp.Dom;
-using Microsoft.Graph;
-using OfficeDevPnP.Core.Diagnostics.Tree;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.ServiceModel.Channels;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,10 +10,21 @@ namespace OOP
     {
         public static void Main(string[] args)
         {
+            // Using the Singleton instance of TransactionStorage
+            ITransactionStorage storage = TransactionStorage.Instance;
 
-            ITransactionStorage storage = new TransactionStorage();
+            Product product1 = new Product
+            {
+                ProductID = 1,
+                Name = "Product A",
+                Description = "Description of Product A",
+                Price = 10.99,
+                Stock = 100,
+                CreatedAt = DateTime.Now,
+                ShopID = 1
+            };
 
-            // create Order và save
+            // Create new order then save
             Order newOrder = new Order
             {
                 ID = 2,
@@ -32,9 +39,10 @@ namespace OOP
                 ShippingProviderID = 2,
             };
 
+            // Saving the order transaction
             storage.SaveTransaction(newOrder);
 
-            // create ShoppingCart và save
+            // Create new shopping cart then save
             ShoppingCart cart = new ShoppingCart
             {
                 ID = 3,
@@ -48,7 +56,9 @@ namespace OOP
                 }
             };
 
+            // Saving the cart transaction
             storage.SaveTransaction(cart);
         }
     }
 }
+
